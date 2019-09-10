@@ -1,0 +1,27 @@
+@mixin a-transition($transition) {
+    -webkit-transition: all $transition ease-in-out;
+    -moz-transition: all $transition ease-in-out;
+    -o-transition: all $transition ease-in-out;
+    -ms-transition: all $transition ease-in-out;
+    transition: all $transition ease-in-out;
+}
+
+@mixin form-style {
+    position: relative;
+    border: 0;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 0;
+    display: block;
+    font-size: 0.9em;
+    margin: 0;
+    padding: 10px 0 10px 0;
+    width: 100%;
+    background: transparent;
+    text-align: left;
+    color: inherit;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
