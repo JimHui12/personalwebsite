@@ -1,5 +1,5 @@
 @import "_variable.scss";
-
+@import "_mixin.scss";
 
 
 
@@ -35,5 +35,119 @@ body {
 
     a {
         color: $card-header-color;
+        text-decoration: none;
+        outline: none;
+        @include a-transition(0.3s);
+
+        &:hover {
+            color: $hover-color;
+        }
+
+        &:focus {
+            outline: 0;
+        }
     }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $heading-color;
+        font-family: 'Montserrat', Helvetica, sans-serif;
+        font-weight: 600;
+        line-height: 1.5em;
+        margin-top: 0;
+        margin-bottom: 10px;        
+    }
+
+    p {
+        font-size: $paragraph-font-size;
+        margin: 0 0 10px;
+    }
+
+    p.lead {
+        font-size: 18px;
+        margin: 25px 0;
+    }
+
+    img {
+        vertical-align: bottom;
+        max-width: 100%;
+        height: auto;
+        border: 0;
+        -ms-interpolation-mode: bicubic;
+    }
+
+    .page {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .mobile-visible {
+        display: none;
+        visibility: hidden;
+    }
+
+    .mobile-hidden {
+        display: block;
+        visibility: visible;
+    }
+
+    /* Form controls */
+    .form-group {
+        position: relative;
+        margin: 0 0 25px;
+    }
+
+    .form-control {
+        height: 42px;
+        @include form-style;
+        &:focus {
+            height: 42px;
+            @include form-style;
+        }
+
+        &+.form-control-border {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            background: $card-header-color;
+            height: 2px;
+            @include a-transition(0.3s)
+        }
+    }
+
+    .has-error {
+        .form-control {
+            @include form-style;
+            &:focus {
+                @include form-style;
+            }
+        }
+    }
+
+    textarea.form-control {
+        height: auto;
+        &:focus {
+            height: auto;
+        }
+    }
+
+    /* Form not completed*/
+
+    /* Buttons */
+    .btn-primary,
+    .btn-secondary,
+    button, input[type="button"], input[type="submit"] {
+        text-transform: uppercase;
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 2.8;
+        padding: 0 1.5em;
+        outline: none;
+        border: 0;
+        border-radius: 3px;
+    }    
 }
