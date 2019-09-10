@@ -20,10 +20,160 @@ body {
   -webkit-background-size: cover;
   background-attachment: fixed;
   background-position: center center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  /* Form controls */
+  /* Form not completed*/
+  /* Buttons */ }
   body.ajax-page-visible {
     overflow: hidden; }
   body a {
-    color: #2eca7f; }
+    color: #2eca7f;
+    text-decoration: none;
+    outline: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    body a:hover {
+      color: #FF9800; }
+    body a:focus {
+      outline: 0; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    color: #212121;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px; }
+  body p {
+    font-size: 16px;
+    margin: 0 0 10px; }
+  body p.lead {
+    font-size: 18px;
+    margin: 25px 0; }
+  body img {
+    vertical-align: bottom;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    -ms-interpolation-mode: bicubic; }
+  body .page {
+    position: relative;
+    width: 100%;
+    height: auto; }
+  body .mobile-visible {
+    display: none;
+    visibility: hidden; }
+  body .mobile-hidden {
+    display: block;
+    visibility: visible; }
+  body .form-group {
+    position: relative;
+    margin: 0 0 25px; }
+  body .form-control {
+    height: 42px;
+    position: relative;
+    border: 0;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 0;
+    display: block;
+    font-size: 0.9em;
+    margin: 0;
+    padding: 10px 0 10px 0;
+    width: 100%;
+    background: transparent;
+    text-align: left;
+    color: inherit;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    font-family: 'Roboto', Helvetica, sans-serif; }
+    body .form-control:focus {
+      height: 42px;
+      position: relative;
+      border: 0;
+      border-bottom: 1px solid #e0e0e0;
+      border-radius: 0;
+      display: block;
+      font-size: 0.9em;
+      margin: 0;
+      padding: 10px 0 10px 0;
+      width: 100%;
+      background: transparent;
+      text-align: left;
+      color: inherit;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      outline: none;
+      font-family: 'Roboto', Helvetica, sans-serif; }
+    body .form-control + .form-control-border {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 50%;
+      right: 50%;
+      bottom: 0;
+      background: #2eca7f;
+      height: 2px;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+  body .has-error .form-control {
+    position: relative;
+    border: 0;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 0;
+    display: block;
+    font-size: 0.9em;
+    margin: 0;
+    padding: 10px 0 10px 0;
+    width: 100%;
+    background: transparent;
+    text-align: left;
+    color: inherit;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    font-family: 'Roboto', Helvetica, sans-serif; }
+    body .has-error .form-control:focus {
+      position: relative;
+      border: 0;
+      border-bottom: 1px solid #e0e0e0;
+      border-radius: 0;
+      display: block;
+      font-size: 0.9em;
+      margin: 0;
+      padding: 10px 0 10px 0;
+      width: 100%;
+      background: transparent;
+      text-align: left;
+      color: inherit;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      outline: none;
+      font-family: 'Roboto', Helvetica, sans-serif; }
+  body textarea.form-control {
+    height: auto; }
+    body textarea.form-control:focus {
+      height: auto; }
+  body .btn-primary,
+  body .btn-secondary,
+  body button, body input[type="button"], body input[type="submit"] {
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2.8;
+    padding: 0 1.5em;
+    outline: none;
+    border: 0;
+    border-radius: 3px; }
 
 /*# sourceMappingURL=app.css.map */
