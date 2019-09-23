@@ -6,6 +6,19 @@
     transition: all $transition ease-in-out;
 }
 
+@mixin translate3d($one, $two ,$three) {
+    -webkit-transform: translate3d($one, $two ,$three);
+    -o-transform: translate3d($one, $two ,$three);
+    -moz-transform: translate3d($one, $two ,$three);
+    transform: translate3d($one, $two ,$three);
+}
+
+@mixin section-box-shadow($one, $two, $three, $four, $point-one, $point-two) {
+    -webkit-box-shadow: $one $two $three $four rgba($point-one,$point-one,$point-one,$point-two);
+    -moz-box-shadow: $one $two $three $four rgba($point-one,$point-one,$point-one,$point-two);
+    box-shadow: $one  $two $three $four rgba($point-one,$point-one,$point-one,$point-two);
+}
+
 @mixin form-style {
     position: relative;
     border: 0;
@@ -24,4 +37,44 @@
     box-shadow: none;
     outline: none;
     font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+@mixin button-box-shadow($first, $second, $third, $fourth, $fifth, $sixth, $value-one, $value-two, $value-three) {
+    box-shadow: $first $second $third rgba($value-one,$value-one,$value-one,$value-two), $fourth $fifth $sixth rgba($value-one,$value-one,$value-one,$value-three);  
+}
+
+@mixin  button-all {
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2.8;
+    padding: 0 1.5em;
+    outline: none;
+    border: 0;
+    border-radius: 3px;
+}
+
+@mixin border-top-style($border-width, $border-type, $border-color) {
+    border-top: $border-width $border-type $border-color;
+}
+
+@mixin border-bottom-style($border-width, $border-type, $border-color) {
+    border-bottom: $border-width $border-type $border-color;
+}
+
+@mixin site-main-menu {
+    display: block;
+    position: relative;
+    padding: 8px 0;
+    margin: 0 20px;
+    text-align: center;
+    color: #49515d;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 400;
+    position: relative;
+    text-decoration: none;
+    outline: none;
+    opacity: 0.6;
 }
