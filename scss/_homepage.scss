@@ -1,0 +1,37 @@
+@import "_variable.scss";
+@import "_mixin.scss";
+
+/* ============================================================================= 
+7. Subpages
+============================================================================= */
+/* =======================================
+7.1. Home subpage
+======================================= */
+.start-page-content {
+    .page-header {
+        position: relative;
+        background-color: $card-header-color;
+        padding: $subpage-padding-bottom;
+        margin-bottom: $margin-bottom;
+        background-image: url(../img/sp_main_bg.png);
+        background-size: cover;
+        -webkit-background-size: cover;
+        background-attachment: scroll;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        .photo {
+            max-width: $photo-width;
+            margin-bottom: -75px;
+            border: 3px solid $button-text-color;
+            background-color: $button-text-color;
+            @include section-box-shadow(0px, 3px, 8px, 0px, 0, 0.1);
+            @include a-transition(0.3s);
+
+            &:hover {
+                @include translate-Y(-9px);
+                //@include section-box-shadow();
+            }
+        }
+    }
+}
