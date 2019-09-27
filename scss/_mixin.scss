@@ -26,6 +26,13 @@
     box-shadow: $one  $two $three $four rgba($point-one,$point-one,$point-one,$point-two);
 }
 
+@mixin photo-box-shadow($one, $two, $three, $value-one, $value-two) {
+    -webkit-box-shadow: $one $two $three rgba($value-one, $value-one, $value-one, $value-two);
+    -moz-box-shadow: $one $two $three rgba($value-one, $value-one, $value-one, $value-two);
+    -o-box-shadow: $one $two $three rgba($value-one, $value-one, $value-one, $value-two);
+    box-shadow: $one $two $three rgba($value-one, $value-one, $value-one, $value-two);    
+}
+
 @mixin form-style {
     position: relative;
     border: 0;
