@@ -4,7 +4,7 @@
 /* =======================================
 7.1. Home subpage
 ======================================= */
-.start-page-content .page-header {
+.material-template .page .site-main .pt-wrapper .subpages .pt-page .start-page-content .page-header {
   position: relative;
   background-color: #2eca7f;
   padding: 50px;
@@ -16,7 +16,7 @@
   background-position: center center;
   background-repeat: no-repeat;
 }
-.start-page-content .page-header .photo {
+.material-template .page .site-main .pt-wrapper .subpages .pt-page .start-page-content .page-header .photo {
   max-width: 280px;
   margin-bottom: -75px;
   border: 3px solid #fff;
@@ -30,7 +30,7 @@
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.start-page-content .page-header .photo:hover {
+.material-template .page .site-main .pt-wrapper .subpages .pt-page .start-page-content .page-header .photo:hover {
   -webkit-transform: translateY(-9px);
   -ms-transform: translateY(-9px);
   -o-transform: translateY(-9px);
@@ -40,27 +40,27 @@
   -o-box-shadow: 0px 18px 24px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 18px 24px rgba(0, 0, 0, 0.15);
 }
-.start-page-content .page-header .title-block {
+.material-template .page .site-main .pt-wrapper .subpages .pt-page .start-page-content .page-header .title-block {
   text-align: center;
 }
-.start-page-content .page-header .title-block h1 {
+.material-template .page .site-main .pt-wrapper .subpages .pt-page .start-page-content .page-header .title-block h1 {
   color: #fff;
   font-size: 54px;
   font-weight: 700;
   margin: 30px 0 0;
 }
-.start-page-content .page-header .title-block .sp-subtitle {
+.material-template .page .site-main .pt-wrapper .subpages .pt-page .start-page-content .page-header .title-block .sp-subtitle {
   color: #fff;
   font-size: 18px;
   margin: 0;
 }
-.start-page-content .social-links {
+.material-template .page .site-main .pt-wrapper .subpages .pt-page .start-page-content .social-links {
   position: relative;
   text-align: center;
   margin: 0 auto;
   margin-top: 20px;
 }
-.start-page-content .social-links a {
+.material-template .page .site-main .pt-wrapper .subpages .pt-page .start-page-content .social-links a {
   display: inline-block;
   width: 36px;
   height: 36px;
@@ -73,45 +73,45 @@
   -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
 }
-.start-page-content .social-links a:hover {
+.material-template .page .site-main .pt-wrapper .subpages .pt-page .start-page-content .social-links a:hover {
   -webkit-box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.2);
 }
-.start-page-content .social-links a i {
+.material-template .page .site-main .pt-wrapper .subpages .pt-page .start-page-content .social-links a i {
   line-height: 36px;
   font-size: 12px;
 }
-.start-page-content .page-content {
+.material-template .page .site-main .pt-wrapper .subpages .pt-page .start-page-content .page-content {
   padding-top: 20px;
 }
-.start-page-content .page-content div {
+.material-template .page .site-main .pt-wrapper .subpages .pt-page .start-page-content .page-content div {
   display: inline-block;
   height: 100%;
 }
-.start-page-content .page-content .download-resume {
+.material-template .page .site-main .pt-wrapper .subpages .pt-page .start-page-content .page-content .download-resume {
   margin-top: 15px;
 }
-.start-page-content .about-me .block-title h3 {
+.material-template .page .site-main .pt-wrapper .subpages .pt-page .start-page-content .about-me .block-title h3 {
   margin-bottom: 10px;
 }
-.start-page-content .info-list {
+.material-template .page .site-main .pt-wrapper .subpages .pt-page .start-page-content .info-list {
   display: inline-block;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.start-page-content .info-list li {
+.material-template .page .site-main .pt-wrapper .subpages .pt-page .start-page-content .info-list li {
   margin: 6px 0;
   text-align: left;
 }
-.start-page-content .info-list li .title {
+.material-template .page .site-main .pt-wrapper .subpages .pt-page .start-page-content .info-list li .title {
   display: inline-block;
   min-width: 120px;
 }
-.start-page-content .info-list li .value {
+.material-template .page .site-main .pt-wrapper .subpages .pt-page .start-page-content .info-list li .value {
   display: inline-block;
   color: #9e9e9e;
 }
 
-/*# sourceMappingURL=homepage.css.map */
+/*# sourceMappingURL=home.css.map */
