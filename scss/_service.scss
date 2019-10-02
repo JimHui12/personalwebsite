@@ -1,3 +1,6 @@
+@import "_variable.scss";
+@import "_mixin.scss";
+
 /* ============================================================================= 
 7. Subpages
 ============================================================================= */
@@ -21,6 +24,56 @@
                                         text-align: center;
                                         padding: 0;
                                         margin-bottom: 30px;
+
+                                        .service-info {
+                                            .service-image {
+                                                width: 120px;
+                                                height: 120px;
+                                                background-color: $service-image-background;
+                                                border-radius: 100px;
+                                                margin: 0 auto;
+                                                text-align: center;
+                                                @include a-transition(0.3s);
+
+                                                &:hover {
+                                                    @include translate-Y(-7px);
+                                                    @include photo-box-shadow(0, 7px, 12px, 0, 0.15); 
+                                                }
+
+                                            }
+                                        }
+
+                                        img {
+                                            max-width: 100px;
+                                            height: 64px;
+                                            margin: 28px 0;
+                                        }
+
+                                        h4 {
+                                            font-size: 17px;
+                                            padding: 20px 0 0;    
+                                        }
+                                    }
+                                }
+
+                                .row {
+                                    .block-title {
+
+                                    }
+
+                                    .client-block {
+                                        text-align: center;
+                                        padding: 5px 0;
+                                        opacity: 0.4;
+                                        @include a-transition(0.2s);
+
+                                        &:hover {
+                                            opacity: 1;
+                                        }
+
+                                        img {
+                                            max-width: 80px;
+                                        }
                                     }
                                 }
                             }

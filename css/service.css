@@ -7,6 +7,55 @@
 .material-template .pre-loader .page .site-main .pt-wrapper .pt-page .custom-page-content .page-content .row .service-block {
   text-align: center;
   padding: 0;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+}
+.material-template .pre-loader .page .site-main .pt-wrapper .pt-page .custom-page-content .page-content .row .service-block .service-info .service-image {
+  width: 120px;
+  height: 120px;
+  background-color: #fafafa;
+  border-radius: 100px;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.material-template .pre-loader .page .site-main .pt-wrapper .pt-page .custom-page-content .page-content .row .service-block .service-info .service-image:hover {
+  -webkit-transform: translateY(-7px);
+  -ms-transform: translateY(-7px);
+  -o-transform: translateY(-7px);
+  transform: translateY(-7px);
+  -webkit-box-shadow: 0 7px 12px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 7px 12px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 7px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 7px 12px rgba(0, 0, 0, 0.15);
+}
+.material-template .pre-loader .page .site-main .pt-wrapper .pt-page .custom-page-content .page-content .row .service-block img {
+  max-width: 100px;
+  height: 64px;
+  margin: 28px 0;
+}
+.material-template .pre-loader .page .site-main .pt-wrapper .pt-page .custom-page-content .page-content .row .service-block h4 {
+  font-size: 17px;
+  padding: 20px 0 0;
+}
+.material-template .pre-loader .page .site-main .pt-wrapper .pt-page .custom-page-content .page-content .row .client-block {
+  text-align: center;
+  padding: 5px 0;
+  opacity: 0.4;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.material-template .pre-loader .page .site-main .pt-wrapper .pt-page .custom-page-content .page-content .row .client-block:hover {
+  opacity: 1;
+}
+.material-template .pre-loader .page .site-main .pt-wrapper .pt-page .custom-page-content .page-content .row .client-block img {
+  max-width: 80px;
+}
 
 /*# sourceMappingURL=service.css.map */
