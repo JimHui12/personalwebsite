@@ -66,58 +66,99 @@
                                                 left: -29px;
                                                 z-index: 2;   
                                             }
+
+                                            .item-title {
+                                                display: block;
+                                                margin: 0;
+                                                font-size: $paragraph-font-size;
+                                                line-height: 1.2em;
+                                            }
+
+                                            .item-period {
+                                                display: inline-block;
+                                                font-size: $text-small;
+                                                line-height: 1.2em;
+                                                color: $card-header-color;
+                                                margin-bottom: 8px;
+                                            }
+
+                                            .item-small {
+                                                display: inline-block;
+                                                font-size: $text-small;
+                                                line-height: 1.2em;
+                                                color: $copyright-text-color;
+                                                margin-left: 5px;
+                                                margin-bottom: 8px;
+                                                padding-left: 8px;
+                                                border-left: 1px solid $resume-timeline;
+                                            }
                                         }                                        
                                     }
                                 }
                                 .row {
-                                    .timeline {
-                                        border-left: 2px solid $resume-timeline;
-                                        padding: 15px 0;
-                                    
-                                        .timeline-item {
-                                            position: relative;
-                                            padding: 15px 20px 10px;
-                                            margin-left: 20px;
-                                            margin-bottom: 20px;
-                                            background-color: $button-text-color;
-                                            border-left: 2px solid $card-header-color;
-                                            @include section-box-shadow(0px, 0px, 3px, 0px, 0, 0.2);
-                                    
-                                            &:hover {
-                                                @include section-box-shadow(0px, 0px, 8px, 0px, 0, 0.2);
+                                    .block {
+                                        .block-title {
+                                            h3 {
+
                                             }
-                                    
-                                            &:last-child {
-                                                margin-bottom: 0;
+                                        }
+
+                                        .skill-info {
+                                            margin-bottom: 30px;
+                                            h4 {
+                                                font-size: 0.8em;
+                                                line-height: 1.1em;
+                                                position: relative;
+                                                margin: 0 0 5px;
                                             }
-                                    
-                                            &:before {
-                                                content: '';
-                                                display: inline-block;
-                                                position: absolute;
-                                                background-color: $button-text-color;
-                                                border-radius: 10px;
-                                                width: 12px;
-                                                height: 12px;
-                                                top: 20px;
-                                                left: -29px;
-                                                border: 2px solid $card-header-color;
-                                                z-index: 2;  
+                                            .skill-container {
+                                                background-color: $background-color;
+                                                border: 1px solid $resume-timeline;
+                                                @include skill-box-sizing;
+                                                height: $text-small;    
+                                                margin-bottom: $text-small;
+                                                width: 100%;
+
+                                                .skill-percentage {
+                                                    background-color: $card-header-color;
+                                                    height: 10px;
+                                                    padding: 0;
+                                                    @include  a-transition(2s); 
+
+                                                    &.skill-1 {
+                                                        width: $skill-percent;
+                                                    }
+
+                                                    &.skill-2 {
+                                                        width: $skill-percent;
+                                                    }
+                                                    
+                                                    &.skill-3 {
+                                                        width: $skill-percent;
+                                                    }
+
+                                                    &.skill-4 {
+                                                        width: $skill-percent;
+                                                    }
+
+                                                    &.skill-5 {
+                                                        width: $skill-percent;
+                                                    }
+
+                                                    &.skill-6 {
+                                                        width: $skill-percent;
+                                                    }
+
+                                                    &.skill-7 {
+                                                        width: $skill-percent;
+                                                    }
+
+                                                    &.skill-8 {
+                                                        width: $skill-percent;
+                                                    }
+                                                }
                                             }
-                                    
-                                            &:after {
-                                                content: '';
-                                                display: inline-block;
-                                                position: absolute;
-                                                background-color: $button-text-color;
-                                                border-radius: 10px;
-                                                width: 29px;
-                                                height: 2px;
-                                                top: 20px;
-                                                left: -29px;
-                                                z-index: 2;   
-                                            }
-                                        }                                        
+                                        }
                                     }
                                 }                                
                             }

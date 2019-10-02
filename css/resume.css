@@ -52,53 +52,81 @@
   left: -29px;
   z-index: 2;
 }
-.material-template .preloader .page .site-main .pt-wrapper .pt-page .custome-page-content .page-content .row .timeline {
-  border-left: 2px solid #e0e0e0;
-  padding: 15px 0;
+.material-template .preloader .page .site-main .pt-wrapper .pt-page .custome-page-content .page-content .row .timeline .timeline-item .item-title {
+  display: block;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.2em;
 }
-.material-template .preloader .page .site-main .pt-wrapper .pt-page .custome-page-content .page-content .row .timeline .timeline-item {
+.material-template .preloader .page .site-main .pt-wrapper .pt-page .custome-page-content .page-content .row .timeline .timeline-item .item-period {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.2em;
+  color: #2eca7f;
+  margin-bottom: 8px;
+}
+.material-template .preloader .page .site-main .pt-wrapper .pt-page .custome-page-content .page-content .row .timeline .timeline-item .item-small {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.2em;
+  color: #9e9e9e;
+  margin-left: 5px;
+  margin-bottom: 8px;
+  padding-left: 8px;
+  border-left: 1px solid #e0e0e0;
+}
+.material-template .preloader .page .site-main .pt-wrapper .pt-page .custome-page-content .page-content .row .block .skill-info {
+  margin-bottom: 30px;
+}
+.material-template .preloader .page .site-main .pt-wrapper .pt-page .custome-page-content .page-content .row .block .skill-info h4 {
+  font-size: 0.8em;
+  line-height: 1.1em;
   position: relative;
-  padding: 15px 20px 10px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  background-color: #fff;
-  border-left: 2px solid #2eca7f;
-  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+  margin: 0 0 5px;
 }
-.material-template .preloader .page .site-main .pt-wrapper .pt-page .custome-page-content .page-content .row .timeline .timeline-item:hover {
-  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
-}
-.material-template .preloader .page .site-main .pt-wrapper .pt-page .custome-page-content .page-content .row .timeline .timeline-item:last-child {
-  margin-bottom: 0;
-}
-.material-template .preloader .page .site-main .pt-wrapper .pt-page .custome-page-content .page-content .row .timeline .timeline-item:before {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  background-color: #fff;
-  border-radius: 10px;
-  width: 12px;
+.material-template .preloader .page .site-main .pt-wrapper .pt-page .custome-page-content .page-content .row .block .skill-info .skill-container {
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   height: 12px;
-  top: 20px;
-  left: -29px;
-  border: 2px solid #2eca7f;
-  z-index: 2;
+  margin-bottom: 12px;
+  width: 100%;
 }
-.material-template .preloader .page .site-main .pt-wrapper .pt-page .custome-page-content .page-content .row .timeline .timeline-item:after {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  background-color: #fff;
-  border-radius: 10px;
-  width: 29px;
-  height: 2px;
-  top: 20px;
-  left: -29px;
-  z-index: 2;
+.material-template .preloader .page .site-main .pt-wrapper .pt-page .custome-page-content .page-content .row .block .skill-info .skill-container .skill-percentage {
+  background-color: #2eca7f;
+  height: 10px;
+  padding: 0;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+.material-template .preloader .page .site-main .pt-wrapper .pt-page .custome-page-content .page-content .row .block .skill-info .skill-container .skill-percentage.skill-1 {
+  width: 88%;
+}
+.material-template .preloader .page .site-main .pt-wrapper .pt-page .custome-page-content .page-content .row .block .skill-info .skill-container .skill-percentage.skill-2 {
+  width: 88%;
+}
+.material-template .preloader .page .site-main .pt-wrapper .pt-page .custome-page-content .page-content .row .block .skill-info .skill-container .skill-percentage.skill-3 {
+  width: 88%;
+}
+.material-template .preloader .page .site-main .pt-wrapper .pt-page .custome-page-content .page-content .row .block .skill-info .skill-container .skill-percentage.skill-4 {
+  width: 88%;
+}
+.material-template .preloader .page .site-main .pt-wrapper .pt-page .custome-page-content .page-content .row .block .skill-info .skill-container .skill-percentage.skill-5 {
+  width: 88%;
+}
+.material-template .preloader .page .site-main .pt-wrapper .pt-page .custome-page-content .page-content .row .block .skill-info .skill-container .skill-percentage.skill-6 {
+  width: 88%;
+}
+.material-template .preloader .page .site-main .pt-wrapper .pt-page .custome-page-content .page-content .row .block .skill-info .skill-container .skill-percentage.skill-7 {
+  width: 88%;
+}
+.material-template .preloader .page .site-main .pt-wrapper .pt-page .custome-page-content .page-content .row .block .skill-info .skill-container .skill-percentage.skill-8 {
+  width: 88%;
 }
 
 /*# sourceMappingURL=resume.css.map */
