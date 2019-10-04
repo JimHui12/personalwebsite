@@ -1,63 +1,117 @@
-/*
-Error: Invalid CSS after "$post-meta-": expected ":", was "$skill-percent:..."
-        on line 25 of E:/02 Web Development Class Project Code/My Personal Website/scss/_variable.scss
-        from line 1 of E:\02 Web Development Class Project Code\My Personal Website\scss\_home.scss
+/* ============================================================================= 
+7. Subpages
+============================================================================= */
+/* =======================================
+7.1. Home subpage
+======================================= */
+#page #main .start-page-content .page-header {
+  position: relative;
+  background-color: #2eca7f;
+  padding: 50px;
+  margin-bottom: 25px;
+  background-image: url(../img/sp_main_bg.png);
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-attachment: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#page #main .start-page-content .page-header .photo {
+  max-width: 280px;
+  margin-bottom: -75px;
+  border: 3px solid #fff;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#page #main .start-page-content .page-header .photo:hover {
+  -webkit-transform: translateY(-9px);
+  -ms-transform: translateY(-9px);
+  -o-transform: translateY(-9px);
+  transform: translateY(-9px);
+  -webkit-box-shadow: 0px 18px 24px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 18px 24px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0px 18px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 18px 24px rgba(0, 0, 0, 0.15);
+}
+#page #main .start-page-content .page-header .title-block {
+  text-align: center;
+}
+#page #main .start-page-content .page-header .title-block h1 {
+  color: #fff;
+  font-size: 54px;
+  font-weight: 700;
+  margin: 30px 0 0;
+}
+#page #main .start-page-content .page-header .title-block .sp-subtitle {
+  color: #fff;
+  font-size: 18px;
+  margin: 0;
+}
+#page #main .start-page-content .social-links {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+#page #main .start-page-content .social-links a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 24px;
+  background-color: #fff;
+  margin: 0 1px;
+  color: #9e9e9e;
+  text-align: center;
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+}
+#page #main .start-page-content .social-links a:hover {
+  -webkit-box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.2);
+}
+#page #main .start-page-content .social-links a i {
+  line-height: 36px;
+  font-size: 12px;
+}
+#page #main .start-page-content .page-content {
+  padding-top: 20px;
+}
+#page #main .start-page-content .page-content div {
+  display: inline-block;
+  height: 100%;
+}
+#page #main .start-page-content .page-content .download-resume {
+  margin-top: 15px;
+}
+#page #main .start-page-content .about-me .block-title h3 {
+  margin-bottom: 10px;
+}
+#page #main .start-page-content .info-list {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#page #main .start-page-content .info-list li {
+  margin: 6px 0;
+  text-align: left;
+}
+#page #main .start-page-content .info-list li .title {
+  display: inline-block;
+  min-width: 120px;
+}
+#page #main .start-page-content .info-list li .value {
+  display: inline-block;
+  color: #9e9e9e;
+}
 
-20: $margin-bottom: 25px;
-21: $photo-width: 280px;
-22: $title-subtitle-font: 18px;
-23: $resume-timeline: #e0e0e0;
-24: $post-meta-
-25: $skill-percent: 88%;
-
-Backtrace:
-E:/02 Web Development Class Project Code/My Personal Website/scss/_variable.scss:25
-E:\02 Web Development Class Project Code\My Personal Website\scss\_home.scss:1
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:640:in `variable'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:321:in `to_tree'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-D:/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-D:/Koala/bin/sass:22:in `load'
-D:/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"$post-meta-\": expected \":\", was \"$skill-percent:...\"\A         on line 25 of E:/02 Web Development Class Project Code/My Personal Website/scss/_variable.scss\A         from line 1 of E:\02 Web Development Class Project Code\My Personal Website\scss\_home.scss\A \A 20: $margin-bottom: 25px;\A 21: $photo-width: 280px;\A 22: $title-subtitle-font: 18px;\A 23: $resume-timeline: #e0e0e0;\A 24: $post-meta-\A 25: $skill-percent: 88%;"; }
+/*# sourceMappingURL=home.css.map */

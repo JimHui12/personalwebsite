@@ -7,133 +7,123 @@
 /* =======================================
 7.1. Home subpage
 ======================================= */
-.material-template {
-    .page {
-        .site-main {
-            .pt-wrapper {
-                .subpages {
-                    .pt-page {
-                        .start-page-content {
-                            .page-header {
-                                position: relative;
-                                background-color: $card-header-color;
-                                padding: $subpage-padding-bottom;
-                                margin-bottom: $margin-bottom;
-                                background-image: url(../img/sp_main_bg.png);
-                                background-size: cover;
-                                -webkit-background-size: cover;
-                                background-attachment: scroll;
-                                background-position: center center;
-                                background-repeat: no-repeat;
-                        
-                                .photo {
-                                    max-width: $photo-width;
-                                    margin-bottom: -75px;
-                                    border: 3px solid $button-text-color;
-                                    background-color: $button-text-color;
-                                    @include section-box-shadow(0px, 3px, 8px, 0px, 0, 0.1);
-                                    @include a-transition(0.3s);
-                        
-                                    &:hover {
-                                        @include translate-Y(-9px);
-                                        @include photo-box-shadow(0px, 18px, 24px, 0, 0.15);
-                                    }
-                                }
-                        
-                                .title-block {
-                                    text-align: center;
-                        
-                                    h1 {
-                                        color: $button-text-color;
-                                        font-size: 54px;
-                                        font-weight: 700;
-                                        margin: 30px 0 0;
-                                    }
-                        
-                                    .sp-subtitle {
-                                        color: $button-text-color;
-                                        font-size: $title-subtitle-font;
-                                        margin: 0;
-                                    }
-                                }
-                            }
-                        
-                            .social-links {
-                                position: relative;
-                                text-align: center;
-                                margin: 0 auto;
-                                margin-top: 20px;
-                        
-                                a {
-                                    display: inline-block;
-                                    width: 36px;
-                                    height: 36px;
-                                    border-radius: 24px;
-                                    background-color: $button-text-color;
-                                    margin: 0 1px;
-                                    color: $copyright-text-color;
-                                    text-align: center;
-                                    @include section-box-shadow(0px, 3px, 8px, 0px, 0, 0.1);
-                        
-                                    &:hover {
-                                        @include section-box-shadow(0px, 6px, 18px, 0px, 0, 0.2 )
-                                    }
-                        
-                                    i {
-                                        line-height: 36px;
-                                        font-size: $margin-bottom-value;
-                                    }
-                                }
-                            }
-                        
-                            .page-content {
-                                padding-top: 20px;
-                        
-                                div {
-                                    display: inline-block;
-                                    height: 100%;
-                                }
-                        
-                                .download-resume {
-                                    margin-top: 15px;
-                                }
-                            }
-                        
-                            .about-me {
-                                .block-title {
-                                    h3 {
-                                        margin-bottom: 10px;
-                                    }
-                                }
-                            }
-                        
-                            .info-list {
-                                display: inline-block;
-                                margin: 0;
-                                padding: 0;
-                                list-style: none;
-                        
-                                li {
-                                    margin: 6px 0;
-                                    text-align: left;
-                        
-                                    .title {
-                                        display: inline-block;
-                                        min-width: 120px;
-                                    }
-                        
-                                    .value {
-                                        display: inline-block;
-                                        color: $copyright-text-color;
-                                    }
-                                }
-                            }
-                        }
+#page {
+    #main {
+        .start-page-content {
+            .page-header {
+                position: relative;
+                background-color: $card-header-color;
+                padding: $subpage-padding-bottom;
+                margin-bottom: $margin-bottom;
+                background-image: url(../img/sp_main_bg.png);
+                background-size: cover;
+                -webkit-background-size: cover;
+                background-attachment: scroll;
+                background-position: center center;
+                background-repeat: no-repeat;
+        
+                .photo {
+                    max-width: $photo-width;
+                    margin-bottom: -75px;
+                    border: 3px solid $button-text-color;
+                    background-color: $button-text-color;
+                    @include section-box-shadow(0px, 3px, 8px, 0px, 0, 0.1);
+                    @include a-transition(0.3s);
+        
+                    &:hover {
+                        @include translate-Y(-9px);
+                        @include photo-box-shadow(0px, 18px, 24px, 0, 0.15);
+                    }
+                }
+        
+                .title-block {
+                    text-align: center;
+        
+                    h1 {
+                        color: $button-text-color;
+                        font-size: 54px;
+                        font-weight: 700;
+                        margin: 30px 0 0;
+                    }
+        
+                    .sp-subtitle {
+                        color: $button-text-color;
+                        font-size: $title-subtitle-font;
+                        margin: 0;
+                    }
+                }
+            }
+        
+            .social-links {
+                position: relative;
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 20px;
+        
+                a {
+                    display: inline-block;
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 24px;
+                    background-color: $button-text-color;
+                    margin: 0 1px;
+                    color: $copyright-text-color;
+                    text-align: center;
+                    @include section-box-shadow(0px, 3px, 8px, 0px, 0, 0.1);
+        
+                    &:hover {
+                        @include section-box-shadow(0px, 6px, 18px, 0px, 0, 0.2 )
+                    }
+        
+                    i {
+                        line-height: 36px;
+                        font-size: $margin-bottom-value;
+                    }
+                }
+            }
+        
+            .page-content {
+                padding-top: 20px;
+        
+                div {
+                    display: inline-block;
+                    height: 100%;
+                }
+        
+                .download-resume {
+                    margin-top: 15px;
+                }
+            }
+        
+            .about-me {
+                .block-title {
+                    h3 {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        
+            .info-list {
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+        
+                li {
+                    margin: 6px 0;
+                    text-align: left;
+        
+                    .title {
+                        display: inline-block;
+                        min-width: 120px;
+                    }
+        
+                    .value {
+                        display: inline-block;
+                        color: $copyright-text-color;
                     }
                 }
             }
         }
     }
 }
-
-
